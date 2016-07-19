@@ -14,7 +14,7 @@ build: 7.0v7.tgz
 	docker run -d --privileged -v $(shell pwd)/src:/tmp --name $(TMP_CONTAINER_NAME) hypriot/armhf-busybox sleep 180
 	docker start $(TMP_CONTAINER_NAME)
 	docker exec -i $(TMP_CONTAINER_NAME) /bin/sh -c /tmp/build_7.0v7.sh
-	cp src/7.0v7.tgz .
+	mv src/7.0v7.tgz .
 	docker kill $(TMP_CONTAINER_NAME)
 	docker rm $(TMP_CONTAINER_NAME)
 	
