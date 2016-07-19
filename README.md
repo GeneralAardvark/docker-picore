@@ -9,7 +9,7 @@ These build scripts were modified from [tatsushid's docker tinycore](https://git
 
 Dockerfile and helper scripts for building a very small CLI system image based
 on Tiny Core Linux developed at [The Core Project](http://tinycorelinux.net).
-It builds Core 7.2 x86\_64 image by using following packages which were
+It builds Core 7.0 armv7 image by using following packages which were
 converted those archive type from The Core Project packages.
 
 - 7.0v7.tgz: contains base system binaries and a file system layout
