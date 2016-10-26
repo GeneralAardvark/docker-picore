@@ -14,9 +14,9 @@
 -		sudo /bin/umount -d /mnt/test
 +		sudo rm -rf /mnt/test
  	fi
+ 	[ "$BOOTING" ] || rmdir /mnt/test
  }
- 
-@@ -268,7 +268,7 @@
+@@ -269,7 +269,7 @@
  		F="${F##*/}"
  		app_exists "$F" "." || fetch_app "$F"
  		[ -f "$TCEINSTALLED/${F%.*}" ] || install "$F"
@@ -25,7 +25,7 @@
  fi
  
  if [ "$TARGETSLOCAL" ]; then
-@@ -285,7 +285,7 @@
+@@ -286,7 +286,7 @@
  				abort_to_saved_dir
  			fi
  		fi
