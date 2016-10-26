@@ -9,13 +9,13 @@ These build scripts were modified from [tatsushid's docker tinycore](https://git
 
 Dockerfile and helper scripts for building a very small CLI system image based
 on Tiny Core Linux developed at [The Core Project](http://tinycorelinux.net).
-It builds Core 7.0 armv7 image by using following packages which were
+It builds Core 8.0 armv7 image by using following packages which were
 converted those archive type from The Core Project packages.
 
-- 7.0v7.tgz: contains base system binaries and a file system layout
+- 8.0v7.tgz: contains base system binaries and a file system layout
 - squashfs-tools.tar.gz: contains a squashfs builder and expander
 
-Those original packages are found under http://tinycorelinux.net/7.x/armv7
+Those original packages are found under http://tinycorelinux.net/8.x/armv7
 
 ## How to build the image
 
