@@ -1,5 +1,5 @@
 FROM scratch
-ADD 8.0v7.tgz /
+ADD 8.*v7.tgz /
 ADD squashfs-tools.tar.gz /
 
 RUN mkdir -p /tmp/tce/optional \
